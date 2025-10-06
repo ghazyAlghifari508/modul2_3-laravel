@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
-use App\Http\Controllers\TubesController;
+use App\Http\Controllers\StudentController;
 
 Route::get('/form', [DataController::class, 'form']);
 Route::post('/proses', [DataController::class, 'proses']);
@@ -10,7 +10,7 @@ Route::post('/proses', [DataController::class, 'proses']);
 //Tubes
 
 Route::get('/', function () {
-    return view('welcome to annpundung!!');
+    return ('welcome!!');
 });
 
 Route::get('/about', function() {
@@ -39,3 +39,5 @@ Route::get('/greet/{name?}', function($name = "Guest") {
 Route::get('/profile', function() {
     return view('profile');
 });
+
+Route::get('/students', [StudentController::class, 'index'])->name('students.index');

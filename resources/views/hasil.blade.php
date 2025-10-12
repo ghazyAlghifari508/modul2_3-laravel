@@ -1,3 +1,4 @@
+{{-- hasil.blade.php --}}
 <!DOCTYPE html>
 <html>
 <head>

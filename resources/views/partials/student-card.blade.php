@@ -1,3 +1,4 @@
+{{-- partials/student-card.blade.php --}}
 <div class="card">
     <h3>{{ $student['name'] }}</h3>
     <p><strong>Jurusan:</strong> {{ $student['major'] }}</p>

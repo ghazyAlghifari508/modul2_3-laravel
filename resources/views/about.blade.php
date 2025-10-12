@@ -1,3 +1,4 @@
+{{-- about.blade.php --}}
 <h1>About Page</h1>
 <p>deskripsi : {{ $deskripsi }}</p>
 

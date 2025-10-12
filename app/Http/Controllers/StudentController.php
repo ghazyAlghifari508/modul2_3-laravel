@@ -10,23 +10,17 @@ class StudentController extends Controller
     {
         $students = [
             [
-                'name' => 'Andi',
-                'major' => 'Teknik Informatika',
-                'age' => 23,
-                'courses' => ['Pemrograman Web', 'Basis Data', 'Jaringan']
+                'name' => 'Wahyudi',
+                'major' => 'Informatika',
+                'age' => 22,
+                'courses' => ['Pemrograman Web', 'Basis Data', 'Cloud Computing']
             ],
             [
-                'name' => 'Budi',
+                'name' => 'Siti',
                 'major' => 'Sistem Informasi',
                 'age' => 21,
-                'courses' => ['Analisis Sistem', 'UI/UX']
+                'courses' => ['UI/UX Designer', 'Managemen Proyek', 'IoT']
             ],
-            [
-                'name' => 'Citra',
-                'major' => 'Teknik Komputer',
-                'age' => 22,
-                'courses' => []
-            ]
         ];
 
         return view('students.index', compact('students'));

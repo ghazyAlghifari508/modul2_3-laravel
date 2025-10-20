@@ -1,5 +1,4 @@
-{{-- about.blade.php --}}
-<h1>About Page</h1>
-<p>deskripsi : {{ $deskripsi }}</p>
+<h1>About page</h1>
+<p>Nama saya adalah : {{ $nama }}</p>
 
-<a href="{{ route('home.page') }}">Kembali ke Home</a>
+<a href="{{ route('home.page') }}" >Kembali ke Home</a>

@@ -1,34 +1,24 @@
-{{-- form.blade.php --}}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Form Biodata anpundung</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-    <h2>Input Biodata anpundung</h2>
+    <h2>Input data</h2>
     <form action="/proses" method="post">
         @csrf
-        <label>Nama:</label>
-        <input type="text" name="nama"><br><br>
-
-        <label>Umur:</label>
-        <input type="number" name="umur"><br><br>
-
-        <label>Alamat:</label>
-        <textarea name="alamat"></textarea><br><br>
-
-        <label>Agama:</label>
-        <select name="agama">
-            <option value="Islam">Islam</option>
-            <option value="Kristen">Kristen</option>
-            <option value="Hindu">Hindu</option>
-            <option value="Budha">Budha</option>
-        </select><br><br>
-
-        <label>Jenis Kelamin:</label>
-        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
-        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
-
+        <label>
+            Nama : <input type="text" name="nama"/><br><br>
+        </label>
+         <label>
+            Umur : <input type="text" name="umur"/><br><br>
+        </label>
+         <label>
+            Alamat : <textarea name="alamat"></textarea><br><br>
+        </label>
         <button type="submit">Kirim</button>
     </form>
 </body>
